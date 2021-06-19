@@ -73,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
                                 totalRecovered.setText(NumberFormat.getInstance().format(recovered));
                                 totalDeath.setText(NumberFormat.getInstance().format(death));
 
-                                todayConfirmed.setText(NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getDeltaconfirmed())));
-                                todayRecovered.setText(NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getDeltarecovered())));
-                                todayDeath.setText(NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getDeltadeaths())));
+                                todayConfirmed.setText("+"+NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getDeltaconfirmed())));
+                                todayRecovered.setText("+"+NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getDeltarecovered())));
+                                todayDeath.setText("+"+NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getDeltadeaths())));
 
                                 setText(list.get(i).getLastupdatedtime());
 

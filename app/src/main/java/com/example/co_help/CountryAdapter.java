@@ -50,7 +50,6 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
 
         holder.countryCases.setText(NumberFormat.getInstance().format(Integer.parseInt(data.getConfirmed())));
         holder.countryName.setText(data.getCountry());
-        holder.sno.setText(String.valueOf(position+1));
 
         Map<String, String> img = data.getCountryInfo();
         Glide.with(context).load(img.get("flag")).into(holder.flag);
@@ -70,13 +69,12 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryV
 
     public class CountryViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView sno, countryName, countryCases;
+        private TextView countryName, countryCases;
         private ImageView flag;
 
         public CountryViewHolder(@NonNull @org.jetbrains.annotations.NotNull View itemView) {
             super(itemView);
 
-            sno = itemView.findViewById(R.id.sno);
             countryName = itemView.findViewById(R.id.countryName);
             countryCases = itemView.findViewById(R.id.countryCases);
             flag = itemView.findViewById(R.id.flag);
