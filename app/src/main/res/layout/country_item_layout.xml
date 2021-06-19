@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="3dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/color_primary"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/color_primary">
+
+        <TextView
+            android:id="@+id/sno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="1235"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/sanslight"/>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:id="@+id/flag"
+            android:layout_toEndOf="@+id/sno"/>
+
+
+        <TextView
+            android:id="@+id/countryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/flag"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/sansbold"/>
+
+        <TextView
+            android:id="@+id/countryCases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="235,625,421"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/sansbold"/>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

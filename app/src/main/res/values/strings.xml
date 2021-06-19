@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Co-Help</string>
+    <string name="bold" tools:ignore="ReferenceType">@font/sansbold</string>
+    <string name="light" tools:ignore="ReferenceType">@font/sanslight</string>
+    <string name="italic" tools:ignore="ReferenceType">@font/sansitalic</string>
+    <string name="regular" tools:ignore="ReferenceType">@font/sansregular</string>
+    <string name="bolditalic" tools:ignore="ReferenceType">@font/sansbolditalic</string>
+</resources>
