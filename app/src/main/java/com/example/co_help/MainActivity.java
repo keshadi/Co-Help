@@ -52,12 +52,6 @@ public class MainActivity extends AppCompatActivity {
         cname.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, CountryActivity.class)));
 
-        TextView help = findViewById(R.id.help);
-        help.setText("Co-Help");
-
-        help.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, HelpActivity.class)));
-
 
 
         ApiUtilities.getApiInterface().getCountryData()
