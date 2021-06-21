@@ -45,21 +45,22 @@ public class CountryActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         dialog = new ProgressDialog(this);
-        dialog.setCancelable(false);
+        dialog.setCancelable(true);
         dialog.show();
+        dialog.setMessage("Loading countries...");
+
 
         ApiUtilities.getApiInterface().getCountryData().enqueue(new Callback<List<CountryData>>() {
             @Override
             public void onResponse(Call<List<CountryData>> call, Response<List<CountryData>> response) {
                 list.addAll(response.body());
-
                 adapter.notifyDataSetChanged();
                 dialog.dismiss();
             }
 
             @Override
             public void onFailure(Call<List<CountryData>> call, Throwable t) {
-                Toast.makeText(CountryActivity.this, "Error: t.getMessage()", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CountryActivity.this, "Error: Check your Internet connection", Toast.LENGTH_LONG).show();
             }
         });
 

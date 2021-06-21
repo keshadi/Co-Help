@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
@@ -33,17 +33,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sansregular"
-                android:text="@string/app_name"
+                android:text="Covid-19 Tracker"
                 android:textColor="@color/white"
-                android:textSize="@dimen/title_size2" />
+                android:textSize="26sp" />
 
             <TextView
                 android:id="@+id/cname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="28dp"
                 android:drawableRight="@drawable/ic_dropdown"
-                android:drawablePadding="10dp"
+                android:drawablePadding="6dp"
                 android:fontFamily="@font/sansbolditalic"
                 android:text="India"
                 android:textColor="@color/white"
